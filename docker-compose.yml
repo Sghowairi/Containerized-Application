@@ -1,4 +1,6 @@
 service:  
   test:
     build: .
+    volumes:
+      - .:/app
     command: pytest
