@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-      - name: Setup Docker Bulidx
-        uses: docker/setup-buildx-action@v3
+     # - name: Setup Docker Bulidx
+      #  uses: docker/setup-buildx-action@v3
       - name: Run Tests
-        run: |
-          docker-compose run test pytest
+        run: docker compose run test pytest
